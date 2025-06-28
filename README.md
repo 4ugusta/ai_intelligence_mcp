@@ -92,5 +92,20 @@ The server aggregates and cross-validates data from:
 
 
 
-How to make this project
 
+
+## How to make this project
+
+This repository now contains a more featureful implementation of the "AI Startup Intelligence MCP" system. The FastAPI server aggregates results from paid data providers (Crunchbase, CB Insights, PitchBook) and from public web scraping. All connectors are mocked, but the orchestrator shows how confidence scores are merged. To run the project locally:
+
+```bash
+# Install server dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install -r server/requirements.txt
+
+# Start the API server
+uvicorn server.app.main:app --reload
+```
+
+Open `client/index.html` in a browser and issue a search query. The server will return sample data from the mock connectors.
