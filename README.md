@@ -109,3 +109,8 @@ uvicorn server.app.main:app --reload
 ```
 
 Open `client/index.html` in a browser and issue a search query. The server will return sample data from the mock connectors.
+
+
+---
+
+Built by [Augusta Bhardwaj](https://4ugusta.dev). More projects and writing at [4ugusta.dev](https://4ugusta.dev).
